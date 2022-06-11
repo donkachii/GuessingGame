@@ -19,7 +19,14 @@ while (isGame) {
   else {
     console.log("Game Over");
     console.log("Your Score is " + score);
-    isGame = false;
+    let ques = prompt("Enter r to restast. Enter any key to quit");
+    if (ques == "r" || ques == "R") {
+      y = 2;
+      score = 0;
+    } else {
+      isGame = false;
+    }
+
   }
 }
 
